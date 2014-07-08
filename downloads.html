@@ -107,7 +107,6 @@
 			    background: #5AD1EA;
 			    overflow: hidden;
 			}
-			select option:hover { background: #094C06 }
 
 		</style>
 	</head>
@@ -142,6 +141,7 @@
 		                		<option value="1600_1200">1600*1200</option>
 		                		<option value="1920_1200">1920*1200</option>
 		                	</select>
+		                	<a name="downBtn" href="#">查看并下载大图</a>
 		                </p></div>
 		              </a>
 		            </div></li>
@@ -153,6 +153,7 @@
 		                		<option value="1600_1200">1600*1200</option>
 		                		<option value="1920_1200">1920*1200</option>
 		                	</select>
+		                	<a name="downBtn" href="#">查看并下载大图</a>
 		                </p></div>
 		              </a>
 		            </div></li>
@@ -164,6 +165,7 @@
 		                		<option value="1600_1200">1600*1200</option>
 		                		<option value="1920_1200">1920*1200</option>
 		                	</select>
+		                	<a name="downBtn" href="#">查看并下载大图</a>
 		                </p></div>
 		              </a>
 		            </div></li>
@@ -175,7 +177,9 @@
 		                		<option value="1600_1200">1600*1200</option>
 		                		<option value="1920_1200">1920*1200</option>
 		                	</select>
-		                
+		                	<a name="downBtn" href="#">查看并下载大图</a>
+		                </p></div>
+		              </a>
 		            </div></li>
 		 			<li><div class="li_div">
 		              <a name="show_page">
@@ -185,6 +189,7 @@
 		                		<option value="1600_1200">1600*1200</option>
 		                		<option value="1920_1200">1920*1200</option>
 		                	</select>
+		                	<a name="downBtn" href="#">查看并下载大图</a>
 		                </p></div>
 		              </a>
 		            </div></li>
@@ -196,6 +201,7 @@
 		                		<option value="1600_1200">1600*1200</option>
 		                		<option value="1920_1200">1920*1200</option>
 		                	</select>
+		                	<a name="downBtn" href="#">查看并下载大图</a>
 		                </p></div>
 		              </a>
 		            </div></li>
@@ -204,5 +210,16 @@
 		 </div>
 		<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 	</body>
+	<script type="text/javascript">
+		var oSlt = document.getElementsByTagName('select');
+		var oDown = document.getElementsByName('downBtn');
+		for (var i=0; i < oSlt.length; i++) {
+			(function (i) {
+				oDown[i].onclick = function () {
+					alert(oSlt[i].value);
+				};
+			})(i);
+		};
+	</script>
 </html>
 
