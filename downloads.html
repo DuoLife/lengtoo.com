@@ -141,7 +141,8 @@
 		                		<option value="1600_1200">1600*1200</option>
 		                		<option value="1920_1200">1920*1200</option>
 		                	</select>
-		                	<a name="downBtn" href="#">查看并下载大图</a>
+		                	<a name="downBtn" target="_blank" href="#">查看并下载大图</a>
+		                	<input type="hidden" name="bizhiid" value="14070800">
 		                </p></div>
 		              </a>
 		            </div></li>
@@ -153,7 +154,7 @@
 		                		<option value="1600_1200">1600*1200</option>
 		                		<option value="1920_1200">1920*1200</option>
 		                	</select>
-		                	<a name="downBtn" href="#">查看并下载大图</a>
+		                	<a value="14070801" name="downBtn" target="_blank" href="#">查看并下载大图</a>
 		                </p></div>
 		              </a>
 		            </div></li>
@@ -165,7 +166,7 @@
 		                		<option value="1600_1200">1600*1200</option>
 		                		<option value="1920_1200">1920*1200</option>
 		                	</select>
-		                	<a name="downBtn" href="#">查看并下载大图</a>
+		                	<a value="14070802" name="downBtn" target="_blank" href="#">查看并下载大图</a>
 		                </p></div>
 		              </a>
 		            </div></li>
@@ -177,7 +178,7 @@
 		                		<option value="1600_1200">1600*1200</option>
 		                		<option value="1920_1200">1920*1200</option>
 		                	</select>
-		                	<a name="downBtn" href="#">查看并下载大图</a>
+		                	<a value="14070803" name="downBtn" target="_blank" href="#">查看并下载大图</a>
 		                </p></div>
 		              </a>
 		            </div></li>
@@ -189,7 +190,7 @@
 		                		<option value="1600_1200">1600*1200</option>
 		                		<option value="1920_1200">1920*1200</option>
 		                	</select>
-		                	<a name="downBtn" href="#">查看并下载大图</a>
+		                	<a value="14070804" name="downBtn" target="_blank" href="#">查看并下载大图</a>
 		                </p></div>
 		              </a>
 		            </div></li>
@@ -201,7 +202,7 @@
 		                		<option value="1600_1200">1600*1200</option>
 		                		<option value="1920_1200">1920*1200</option>
 		                	</select>
-		                	<a name="downBtn" href="#">查看并下载大图</a>
+		                	<a value="14070805" name="downBtn" target="_blank" href="#">查看并下载大图</a>
 		                </p></div>
 		              </a>
 		            </div></li>
@@ -213,10 +214,11 @@
 	<script type="text/javascript">
 		var oSlt = document.getElementsByTagName('select');
 		var oDown = document.getElementsByName('downBtn');
+		var oInp = document.getElementsByName('bizhiid');
 		for (var i=0; i < oSlt.length; i++) {
 			(function (i) {
 				oDown[i].onclick = function () {
-					alert(oSlt[i].value);
+					oDown[i].href = 'img/lengtubizhi/' + oSlt[i].value + '_' + oInp[i].value + '.jpg';
 				};
 			})(i);
 		};
