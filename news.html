@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>冷兔官方网站</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css" media="screen" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="author" content="Orange" />
+		<!-- Date: 2014-06-30 -->
+		<style> 
+			.slide {
+				width: 960px;
+				height: 300px;
+				margin: 0px auto;
+				position: relative;
+				left: -10px;
+				overflow: hidden;
+			}
+			.img_wrapper {
+				position: absolute;
+				left: 0px;
+				list-style-type: none;
+				width: 100%;
+				height: 300px;
+			}
+			.img_wrapper li{
+				display: inline;
+				float: left;
+				width: 960px;
+				height: 300px;
+				overflow: hidden;
+				margin: 0px auto;
+				top: 0px;
+			}
+			.img_wrapper img {
+				width: 960px;
+				height: 300px;
+			}
+		</style>
+	</head>
+	<body>
+	 <div class="wrapper">
+		<div class="header">
+		 	<div class="title_bar">
+		 		<ul>
+		 			<li class="logo">ColdWorks</li>
+		 			<li>Lengtoo</li>
+		 			<li>News</li>
+		 			<li>Products</li>
+		 			<li>Downloads</li>
+		 			<li>Licensees</li>
+		 			<li>Contacts</li>
+		 		</ul>
+		 	</div>
+		 </div>
+		 	<div class="slide">
+		 		<ul id="J-Touch1" class="img_wrapper">
+			 		<li>
+			 			<img src="/lengtu/img/news/banner0.jpg"/>
+			 		</li>
+			 		<li>
+			 			<img src="/lengtu/img/news/banner1.jpg"/>
+			 		</li>
+		 		</ul>
+		 	</div>
+		 	<div id="product_list" class="products_list">
+		 		<ul>
+		 			<li><div class="li_div">
+		              <a name="show_page" href="products/Aixiaochu.html">
+		                <img src="/lengtu/img/news/2.jpg" alt="image 2" title="">
+		                <div class="pdt_describe"><p>冷兔萌宠登陆天天爱消除</p></div>
+		              </a>
+		            </div></li>
+		 			<li><div class="li_div">
+		              <a name="show_page" href="products/MoMo.html">
+		                <img src="/lengtu/img/news/3.jpg" alt="image 2" title="">
+		                <div class="pdt_describe"><p>冷兔表情毕业季登陆陌陌表情商城</p></div>
+		              </a>
+		            </div></li>
+		 			<li><div class="li_div">
+		              <a name="show_page" href="products/Line.html">
+		                <img src="/lengtu/img/news/0.jpg" alt="image 2" title="">
+		                <div class="pdt_describe"><p>冷兔贴图上架 LINE camera</p></div>
+		              </a>
+		            </div></li>
+		 			<li><div class="li_div">
+		              <a name="show_page" href="products/BaiduImg.html">
+		                <img src="/lengtu/img/news/4.jpg" alt="image 2" title="">
+		                <div class="pdt_describe"><p>冷兔表情上架 kakao talk</p></div>
+		              </a>
+		            </div></li>
+		 			<li><div class="li_div">
+		              <a name="show_page" href="products/QQstore.html">
+		                <img src="/lengtu/img/news/5.jpg" alt="image 2" title="">
+		                <div class="pdt_describe"><p>冷兔世界杯表情登陆QQ表情商城</p></div>
+		              </a>
+		            </div></li>
+		 			<li><div class="li_div">
+		              <a name="show_page" href="http://speed.qq.com/act/a20140701lthz/index.htm?qq-pf-to=pcqq.discussion">
+		                <img src="/lengtu/img/news/1.jpg" alt="image 2" title="">
+		                <div class="pdt_describe"><p>冷兔QQ飞车宠物上线</p></div>
+		              </a>
+		            </div></li>
+		 		</ul>
+		 	</div>
+		 </div>
+		<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fancybox-1.3.4.js"></script>
+		<!--鼠标控制滚动-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var list_a=document.getElementsByName('show_page');
+				for(var i=0; i<list_a.length;i++) {
+					$(list_a[i]).fancybox({
+					'height':'98%',
+					'autoScale':'true',
+					'transitionIn':'elastic',
+					'transitionOut':'elastic',
+					'type':'iframe',
+					'centerOnScroll':'true'
+				});
+				}
+				/*$("#show_page").fancybox({
+					'autoScale':true,
+					'transitionIn':'elastic',
+					'transitionOut':'elastic',
+					'type':'iframe'
+				});*/
+			});
+		</script>
+	    <script src="js/jquery.sliphover.min.js"></script>
+	    <script src="js/prettify.js"></script>
+	    <script type="text/javascript">
+	      $(function(){
+	        $('#product_list').sliphover({
+			  flip:true,
+			  backgroundColor:'rgba(0,0,0,0.4)',
+			  duration:400
+			});
+	        //code highlight
+	        prettyPrint();
+	      })
+	    </script>
+		<script src="js/imgScrolling.js"></script>
+		<script type="text/javascript">
+			var test1=new mobileImgScroll();
+				test1.init({
+					Touch:"#J-Touch1",
+					//TouchIco:"#J-Touch-ico1",
+					Width:960,
+					Current:"on",
+					isAuto:true,
+					offSet:5000
+				});
+		</script>
+	</body>
+</html>
+

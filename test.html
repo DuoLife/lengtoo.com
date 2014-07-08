@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Jquery_Banner_轮换效果之淡入淡出_130722</title>
+<style type="text/css">
+ul {
+	list-style:none
+}
+body, div, ul, li {
+	margin:0px;
+	padding:0px;
+}
+img {
+	border:none
+}
+ul.imgList li {
+	float:left
+}
+div.imgWrap {
+	position:relative;
+	width:960px;
+	height:230px;
+	overflow:hidden;
+	margin:10px
+}
+i#prev {
+	background:url([img]http://www.w3cfuns.com/template/w3cfuns2013/images/extend/portal/index/focusAdvBg.png[/img]) no-repeat left top;
+	left:50px;
+}
+i#next {
+ background:url([img]http://www.w3cfuns.com/template/w3cfuns2013/images/extend/portal/index/focusAdvBg.png[/img]) no-repeat right top;right:50px;
+}
+i#prev, i#next {
+	width:46px;
+	height:62px;
+	display:block;
+	z-index:9;
+	text-indent:-9999px;
+	position:absolute;
+	top:80px;
+	cursor:pointer
+}
+div.caption{
+	width:100%;
+	height:30px;
+	opacity:0.5;
+	background:#585858;
+	position:absolute;
+	bottom:0;
+	left:0;
+	line-height:30px;
+	color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	font-weight:600;
+	text-indent:50px;
+}
+.imgPage li{
+	display:block;
+	float:left;
+	width:10px;
+	height:10px;
+	background:#094c06;
+	margin-left:5px;
+	cursor:pointer;
+}
+.imgPage li.current{
+	background:rgb(65,194,102)
+}
+.imgPage{
+	position:absolute;
+	bottom:10px;
+	right:100px;
+	z-index:2
+}
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$img = $('.imgList img');
+	$caption = $('div.caption');
+	var index = 0;
+	var page = '';
+	var maxIndex = $img.length - 1;
+	var title = $img.eq(0).attr('alt');
+	$caption.text(title);
+	
+	/*Add PageNum*/
+	for(var i=0;i<=maxIndex;i++){
+		$('.imgPage').append('<li class="num'+i+'"></li>');
+	}
+	
+	/*PageNum click*/
+	$pageNum = $('.imgPage li');
+	$pageNum.eq(0).addClass('current');
+	$pageNum .live('mouseover',function(){
+		$(this).addClass('current').siblings().removeClass('current');
+		index = page = $pageNum.index($(this));
+		title = $img.eq(index).attr("alt");
+		$caption.text(title);
+		$img.fadeOut().eq(page).fadeIn();
+		
+	})
+	
+	/*Prev click*/
+	$('#prev').click(function(){
+		if(index > 0){
+			title = $img.eq(index).attr("alt");
+			$caption.text(title);
+			$img.eq(index).fadeOut().end().eq(index-1).fadeIn();
+			index--;
+		}else{
+			title = $img.eq(0).attr("alt");
+			$caption.text(title);
+			$img.eq(0).fadeOut().end().eq(maxIndex ).fadeIn();
+			index = maxIndex ;
+		}
+	})
+	
+	/*Next click*/
+	$('#next').click(function(){
+		if(index < maxIndex){
+			title = $img.eq(index).attr("alt");
+			$caption.text(title);
+			$img.eq(index).fadeOut().end().eq(index+1).fadeIn();
+			index++;
+		}else{
+			title = $img.eq(maxIndex).attr("alt");
+			$caption.text(title);
+			$img.eq(maxIndex).fadeOut().end().eq(0).fadeIn();
+			index = 0;
+		}
+	})
+})
+</script>
+</head>
+<body>
+<div class="imgWrap"> <i id="prev">Prev</i> <i id="next">Next</i>
+  <ul class="imgList">
+    <li><a href="#"><img src="http://d.lanrentuku.com/down/js/jiaodiantu-985/images/1.jpg" alt="title_a1"></a></li>
+    <li><a href="#"><img src="http://d.lanrentuku.com/down/js/jiaodiantu-985/images/2.jpg" alt="title_a2"></a></li>
+    <li><a href="#"><img src="http://d.lanrentuku.com/down/js/jiaodiantu-985/images/3.jpg" alt="title_a3"></a></li>
+    <li><a href="#"><img src="http://d.lanrentuku.com/down/js/jiaodiantu-985/images/4.jpg" alt="title_a4"></a></li>
+    <li><a href="#"><img src="http://d.lanrentuku.com/down/js/jiaodiantu-985/images/5.jpg" alt="title_a5"></a></li>
+  </ul>
+  <ul class="imgPage"></ul>
+  <div class="caption"></div>
+</div>
+</body>
+</html>

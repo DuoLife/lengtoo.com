@@ -1,0 +1,88 @@
+/**
+ * date: 2014/04/03	
+ * 
+ * author: xuming
+ * 
+ * email: xuming@coldworks.com
+ */
+html{
+	font-family: Microsoft YaHei;
+}
+.wrapper{
+	background: url("../img/bj.jpg");
+}
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration:none;
+}
+.header{
+	width: 970px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 22px;
+	color: #FFF;
+}
+.title_bar li{
+	line-height: 100px;
+	margin: 0 10px;
+	display: inline;
+	vertical-align: middle;
+}
+.title_bar .logo{
+	margin:0 80px 0 0;
+	font-size: 28px;
+}
+#product_list{
+    width: 960px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+/*content*/
+#container{
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+#product_list li{
+    list-style: none;
+    display: inline-block;
+    margin-top: 10px;
+    box-shadow: 0 0 2px rgba(0, 200, 204, 0.7);
+}
+#product_list li .li_div{
+    width: 310px;
+    height: 260px;
+    display: inline-block;
+	-moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius: 5px;            /* W3C syntax */
+    background-color: #FFF;
+    overflow: hidden;
+}
+#product_list li .pdt_describe{
+    width: 310px;
+    height: 60px;
+    color: #000000;
+    line-height: 60px;
+    margin-top: -5px;
+}
+#product_list li .pdt_describe p{
+    margin-left: 15px;
+}
+#product_list img,#container img,#container .block_item{
+    width: 310px;
+    height: 200px;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+    background-color: #EFF7FA;
+    padding-top: 10px;
+}
+.footer .ft_content{
+    width: 960px;
+    text-align: center;
+    margin: 0px auto;
+}

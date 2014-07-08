@@ -1,0 +1,70 @@
+/**
+ * date: 2014/06/03	
+ * 
+ * author: xuming
+ * 
+ * email: xuming@coldworks.com
+ */
+html{
+	font-family: Microsoft YaHei;
+	margin: 0;
+	padding: 0;
+	background-color: #F0F7FA;
+}
+.products_wrap{
+	width: 900px;
+	margin: 0px auto;
+}
+.products_title{
+	width: 810px;
+	margin: 0px auto;
+	padding-top: 30px;
+}
+.products_title .logo{
+}
+.products_title .logo .down_2d{
+	position: relative;
+	float: right;
+	top: -40px;
+	right: 88px;
+	width: 34px;
+}
+.hr{
+	size: 1px;
+	color: #BABCBE;
+	width: 100%;
+	margin: 20px 0px;
+}
+.products_description{
+	width: 800px;
+	margin: 0px auto;
+}
+.products_description .descrip_word{
+	
+}
+.products_description .descrip_word .p2{
+	text-align: left;
+	color: #E97B55;
+}
+.products_description .descrip_img{
+	margin: 50px auto;
+	text-align: center;
+}
+.products_description .descrip_img img{
+	margin: 0px 36px;
+}
+.products_show{
+	width: 800px;
+	margin: 0px auto;
+	text-align: center;
+}
+.products_show .show_title{
+	text-align: left;
+}
+.products_show img{
+	margin: 10px;
+}
+.download_a{
+	margin-left: 66px;
+	color: #E97B55;
+}
