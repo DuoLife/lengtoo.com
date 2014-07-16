@@ -1,10 +1,15 @@
 /**
- * date: 2014/04/03	
+ * date: 2014/06/30	
  * 
  * author: xuming
  * 
  * email: xuming@coldworks.com
  */
+#nav { width: 940px; height: 60px; text-align: center; line-height: 60px; font-size: 28px; background: #C9DBF1;margin-left: 4px; }
+#nav a { display: block; width: 120px; float: left; color: #FFF; }
+#nav a:hover { background: #9AB2CE; }
+#nav .active {background: #9AB2CE;}
+/*--------------------------------------*/
 html{
 	font-family: Microsoft YaHei;
 }
@@ -68,33 +73,45 @@ a{
 }
 #product_list li{
     list-style: none;
-    display: inline-block;
+	display: inline-block;
     margin-top: 10px;
-    box-shadow: 0 0 2px rgba(0, 200, 204, 0.7);
 }
 #product_list li .li_div{
-    width: 310px;
-    height: 260px;
-    display: inline-block;
+    width: 460px;
+    height: 330px;
+    margin-right: 14px;
 	-moz-border-radius: 5px;      /* Gecko browsers */
     -webkit-border-radius: 5px;   /* Webkit browsers */
-    border-radius: 5px;            /* W3C syntax */
+    border-radius:5px;            /* W3C syntax */
     background-color: #FFF;
     overflow: hidden;
 }
 #product_list li .pdt_describe{
-    width: 310px;
+    width: 460px;
     height: 60px;
     color: #000000;
     line-height: 60px;
-    margin-top: -5px;
+    margin-top: 0px;
+    position: relative;
 }
 #product_list li .pdt_describe p{
     margin-left: 15px;
 }
 #product_list img,#container img,#container .block_item{
-    width: 310px;
-    height: 200px;
+    width: 460px;
+    height: 270px;
+}
+.pdt_describe a{
+	width: 128px;
+	height: 32px;
+	display: block;
+	background: url("/lengtu/img/download/download_0.png") no-repeat center;
+	position: absolute;
+	right: 10px;
+	top: 14px;
+}
+.pdt_describe a:hover{
+	background: url("/lengtu/img/download/download_1.png") no-repeat center;
 }
 .footer{
     width: 100%;
@@ -108,32 +125,18 @@ a{
     text-align: center;
     margin: 0px auto;
 }
-/****************news.html图片滑动******************/
-.slide {
-	width: 960px;
-	height: 300px;
-	margin: 0px auto;
-	position: relative;
-	left: -10px;
-	overflow: hidden;
+select { 
+	color: #F1F1F1;
+	-moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;            /* W3C syntax */
+    background: #5AD1EA;
+    overflow: hidden;
 }
-.img_wrapper {
-	position: absolute;
-	left: 0px;
-	list-style-type: none;
-	width: 100%;
-	height: 300px;
-}
-.img_wrapper li{
-	display: inline;
-	float: left;
-	width: 960px;
-	height: 300px;
-	overflow: hidden;
-	margin: 0px auto;
-	top: 0px;
-}
-.img_wrapper img {
-	width: 960px;
-	height: 300px;
+select option {
+	-moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;            /* W3C syntax */
+    background: #5AD1EA;
+    overflow: hidden;
 }
