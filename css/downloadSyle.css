@@ -31,6 +31,7 @@ a{
 	font-size: 22px;
 	color: #FFF;
 }
+/*********      导航栏        **********/
 .title_bar{
 	position: relative;
 }
@@ -60,6 +61,7 @@ a{
 .title_bar li:hover{
 	background: #EA8E67;
 }
+/*********      导航栏  end      **********/
 #product_list{
     width: 960px;
     margin: 0 auto;
