@@ -3,10 +3,178 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>冷兔官方网站</title>
-		<link rel="stylesheet" href="css/downloadSyle.css">
 	    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		<meta name="author" content="Orange" />
 		<!-- Date: 2014-06-30 -->
+		<style>
+		#nav { width: 940px; height: 60px; text-align: center; line-height: 60px; font-size: 28px; background: #C9DBF1;margin-left: 4px; }
+		#nav a { display: block; width: 120px; float: left; color: #FFF; }
+		#nav a:hover { background: #9AB2CE; }
+		#nav .active {background: #9AB2CE;}
+		/*--------------------------------------*/
+		html{
+			font-family: Microsoft JhengHei;
+		}
+		.wrapper{
+			/*background: url("../img/bj.jpg");*/
+			background: url("/lengtu/img/bj.jpg");
+		}
+		*{
+			margin: 0;
+			padding: 0;
+			text-decoration:none;
+		}
+		a{
+			color: #FFF;
+		}
+		li{
+		    list-style: none;
+			display: inline-block;
+		}
+		.header{
+			width: 970px;
+			margin: 0 auto;
+			text-align: center;
+			font-size: 22px;
+			color: #FFF;
+		}
+		/*********      导航栏        **********/
+		.title_bar{
+			position: relative;
+		}
+		.title_bar .logo{
+			position: absolute;
+			left: 4px;
+			top: 30px;
+			margin:0 80px 0 0;
+			font-size: 28px;
+		}
+		.title_bar ul{
+			position: relative;
+			left: 120px;
+		}
+		.title_bar li{
+			line-height: 100px;
+			margin: 0 4px;
+			padding: 4px 6px 6px;
+			display: inline;
+			-moz-border-radius: 5px;      /* Gecko browsers */
+		    -webkit-border-radius: 5px;   /* Webkit browsers */
+		    border-radius: 5px;            /* W3C syntax */
+		}
+		.title_bar .active{
+			background: #EA8E67;
+		}
+		.title_bar li:hover{
+			background: #EA8E67;
+		}
+		/*********      导航栏 end 内容栏       **********/
+		#product_list{
+		    width: 960px;
+		    margin: 0 auto;
+		    padding-bottom: 20px;
+		}
+		/*content*/
+		#container{
+		    width: 960px;
+		    margin: 0 auto;
+		    text-align: center;
+		}
+		#product_list .liSty{
+			position: relative;
+		    width: 940px;
+		    height: 280px;
+		    margin-top: 10px;
+			-moz-border-radius: 5px;      /* Gecko browsers */
+		    -webkit-border-radius: 5px;   /* Webkit browsers */
+		    border-radius:5px;            /* W3C syntax */
+		    background-color: #FFF;
+		}
+		#product_list .liSty .li_div{
+		    margin-right: 14px;
+		    overflow: hidden;
+		}
+		#product_list h2{
+			font-size: 26px;
+			position: absolute;
+			left: 30px;
+			top: 80px;
+		}
+		#product_list p{
+			font-size: 13px;
+			position: absolute;
+			left: 34px;
+			top: 120px;
+		}
+		#product_list .liSty .down_rar{
+			display: block;
+			width: 92px;
+			height: 30px;
+			background: url("img/download/button_bg/down_rar0.png") no-repeat center;
+			position: absolute;
+			left: 30px;
+			top: 210px;
+		}
+		#product_list .liSty .down_QQrar{
+			display: block;
+			width: 92px;
+			height: 30px;
+			background: url("img/download/button_bg/down_QQrar0.png") no-repeat center;
+			position: absolute;
+			left: 130px;
+			top: 210px;
+		}
+		#product_list .liSty .down_rar:hover{
+			background: url("img/download/button_bg/down_rar1.png") no-repeat center;
+		}
+		#product_list .liSty .down_QQrar:hover{
+			background: url("img/download/button_bg/down_QQrar1.png") no-repeat center;
+		}
+		#product_list .liSty .div{
+			position: absolute;
+			left: 250px;
+			top: 10px;
+			border: 1px solid #C9DBF1;
+			width: 680px;
+			height: 260px;
+		}
+		.liSty .div .lst_wap{
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			/*border: 1px solid #C9DBF1;*/
+			width: 640px;
+			height: 260px;
+			overflow: hidden;
+		}
+		.liSty .div .nextBtn{
+			position: absolute;
+			display: block;
+			background: url(/lengtu/img/download/button_bg/nextBtn0.png) no-repeat center;
+			left: 640px;
+			top: 100px;
+			width: 24px;
+			height: 54px;
+		}
+		.liSty .div .nextBtn:hover{
+			background: url(/lengtu/img/download/button_bg/nextBtn1.png) no-repeat center;
+		}
+		.liSty ul{
+			position: absolute;
+			left: 0px;
+			top: 0px;
+		}
+		.liSty ul li{
+			width: 160px;
+			line-height: 260px;
+			margin-right: 0px;
+			margin-top: 50px;
+		}
+		.liSty ul li img{
+			width: 160px;
+		}
+		/*********      内容栏 end       **********/
+		</style>
 	</head>
 	<body>
 	 <div class="wrapper">
@@ -30,133 +198,129 @@
 		 </div>
 		 
 		 	<div id="product_list" class="products_list">
-		 		<ul>
-		 			<li><div class="li_div">
-		                <img src="/lengtu/img/download/bizhi/14070800.png" alt="冷兔壁纸" title="">
-		                <div class="pdt_describe"><p>壁纸尺寸
-		                	<select>
-		                		<option value="1600_1200">1600*1200</option>
-		                		<option value="1920_1200">1920*1200</option>
-		                	</select>
-		                	<a name="downBtn" target="_blank" href="#"></a>
-		                	<input type="hidden" name="bizhiid" value="14070800">
-		                </p></div>
-		            </div></li>
-		 			<li><div class="li_div">
-		                <img src="/lengtu/img/download/bizhi/14070801.png" alt="冷兔壁纸" title="">
-		                <div class="pdt_describe"><p>壁纸尺寸
-		                	<select>
-		                		<option value="1600_1200">1600*1200</option>
-		                		<option value="1920_1200">1920*1200</option>
-		                	</select>
-		                	<a name="downBtn" target="_blank" href="#"></a>
-		                	<input type="hidden" name="bizhiid" value="14070801">
-		                </p></div>
-		            </div></li>
-		 			<li><div class="li_div">
-		                <img src="/lengtu/img/download/bizhi/14070802.png" alt="冷兔壁纸" title="">
-		                <div class="pdt_describe"><p>壁纸尺寸
-		                	<select>
-		                		<option value="1600_1200">1600*1200</option>
-		                		<option value="1920_1200">1920*1200</option>
-		                	</select>
-		                	<a name="downBtn" target="_blank" href="#"></a>
-		                	<input type="hidden" name="bizhiid" value="14070802">
-		                </p></div>
-		            </div></li>
-		 			<li><div class="li_div">
-		                <img src="/lengtu/img/download/bizhi/14070803.png" alt="冷兔壁纸" title="">
-		                <div class="pdt_describe"><p>壁纸尺寸
-		                	<select>
-		                		<option value="1600_1200">1600*1200</option>
-		                		<option value="1920_1200">1920*1200</option>
-		                	</select>
-		                	<a name="downBtn" target="_blank" href="#"></a>
-		                	<input type="hidden" name="bizhiid" value="14070803">
-		                </p></div>
-		            </div></li>
-		 			<li><div class="li_div">
-		                <img src="/lengtu/img/download/bizhi/14070804.png" alt="冷兔壁纸" title="">
-		                <div class="pdt_describe"><p>壁纸尺寸
-		                	<select>
-		                		<option value="1600_1200">1600*1200</option>
-		                		<option value="1920_1200">1920*1200</option>
-		                	</select>
-		                	<a name="downBtn" target="_blank" href="#"></a>
-		                	<input type="hidden" name="bizhiid" value="14070804">
-		                </p></div>
-		            </div></li>
-		 			<li><div class="li_div">
-		                <img src="/lengtu/img/download/bizhi/14070805.png" alt="冷兔壁纸" title="">
-		                <div class="pdt_describe"><p>壁纸尺寸
-		                	<select>
-		                		<option value="1600_1200">1600*1200</option>
-		                		<option value="1920_1200">1920*1200</option>
-		                	</select>
-		                	<a name="downBtn" target="_blank" href="#"></a>
-		                	<input type="hidden" name="bizhiid" value="14070805">
-		                </p></div>
-		            </div></li>
-		 			<li><div class="li_div">
-		                <img src="/lengtu/img/download/bizhi/14070806.png" alt="冷兔壁纸" title="">
-		                <div class="pdt_describe"><p>壁纸尺寸
-		                	<select>
-		                		<option value="1600_1200">1600*1200</option>
-		                		<option value="1920_1200">1920*1200</option>
-		                	</select>
-		                	<a name="downBtn" target="_blank" href="#"></a>
-		                	<input type="hidden" name="bizhiid" value="14070806">
-		                </p></div>
-		            </div></li>
-		 			<li><div class="li_div">
-		                <img src="/lengtu/img/download/bizhi/14070807.png" alt="冷兔壁纸" title="">
-		                <div class="pdt_describe"><p>壁纸尺寸
-		                	<select>
-		                		<option value="1600_1200">1600*1200</option>
-		                		<option value="1920_1200">1920*1200</option>
-		                	</select>
-		                	<a name="downBtn" target="_blank" href="#"></a>
-		                	<input type="hidden" name="bizhiid" value="14070807">
-		                </p></div>
-		            </div></li>
-		 			<li><div class="li_div">
-		                <img src="/lengtu/img/download/bizhi/14070808.png" alt="冷兔壁纸" title="">
-		                <div class="pdt_describe"><p>壁纸尺寸
-		                	<select>
-		                		<option value="1600_1200">1600*1200</option>
-		                		<option value="1920_1200">1920*1200</option>
-		                	</select>
-		                	<a name="downBtn" target="_blank" href="#"></a>
-		                	<input type="hidden" name="bizhiid" value="14070808">
-		                </p></div>
-		            </div></li>
-		 			<li><div class="li_div">
-		                <img src="/lengtu/img/download/bizhi/14070809.png" alt="冷兔壁纸" title="">
-		                <div class="pdt_describe"><p>壁纸尺寸
-		                	<select>
-		                		<option value="1600_1200">1600*1200</option>
-		                		<option value="1920_1200">1920*1200</option>
-		                	</select>
-		                	<a name="downBtn" target="_blank" href="#"></a>
-		                	<input type="hidden" name="bizhiid" value="14070809">
-		                </p></div>
-		            </div></li>
-		 			<li><div class="li_div">
-		                <img src="/lengtu/img/download/bizhi/14070810.png" alt="冷兔壁纸" title="">
-		                <div class="pdt_describe"><p>壁纸尺寸
-		                	<select>
-		                		<option value="1600_1200">1600*1200</option>
-		                		<option value="1920_1200">1920*1200</option>
-		                	</select>
-		                	<a name="downBtn" target="_blank" href="#"></a>
-		                	<input type="hidden" name="bizhiid" value="14070810">
-		                </p></div>
-		            </div></li>
+		 		<ul id="list">
+		 			<li class="liSty">
+		 				<h2>冷兔LINE</h2>
+		 				<p>2013/04/27&nbsp;&nbsp;&nbsp;共39个</p>
+		 				<a class="down_rar" href="" title="点击即刻下载"></a>
+		 				<a class="down_QQrar" href="" title="点击即刻下载"></a>
+		 				<div class="div">
+							<a name="nextBtn" class="nextBtn" href="javascript:void(0);"></a>
+		 					<div class="lst_wap">
+			 					<ul>
+			 					</ul>
+		 					</div>
+		 				</div>
+		 			</li>
+		 			<li class="liSty">
+		 				<h2>百度魔图</h2>
+		 				<p>2014/03/27&nbsp;&nbsp;&nbsp;共24个</p>
+		 				<a class="down_rar" href="" title="点击即刻下载"></a>
+		 				<a class="down_QQrar" href="" title="点击即刻下载"></a>
+		 				<div class="div">
+							<a name="nextBtn" class="nextBtn" href="javascript:void(0);"></a>
+		 					<div class="lst_wap">
+			 					<ul>
+			 					</ul>
+		 					</div>
+		 				</div>
+		 			</li>
+		 			<li class="liSty">
+		 				<h2>课程格子</h2>
+		 				<p>2013/11/27&nbsp;&nbsp;&nbsp;共23个</p>
+		 				<a class="down_rar" href="" title="点击即刻下载"></a>
+		 				<a class="down_QQrar" href="" title="点击即刻下载"></a>
+		 				<div class="div">
+							<a name="nextBtn" class="nextBtn" href="javascript:void(0);"></a>
+		 					<div class="lst_wap">
+			 					<ul>
+			 					</ul>
+		 					</div>
+		 				</div>
+		 			</li>
+		 			<li class="liSty">
+		 				<h2>QQ表情冷兔双节</h2>
+		 				<p>2014/06/01&nbsp;&nbsp;&nbsp;共16个</p>
+		 				<a class="down_rar" href="" title="点击即刻下载"></a>
+		 				<a class="down_QQrar" href="" title="点击即刻下载"></a>
+		 				<div class="div">
+							<a name="nextBtn" class="nextBtn" href="javascript:void(0);"></a>
+		 					<div class="lst_wap">
+			 					<ul>
+			 					</ul>
+		 					</div>
+		 				</div>
+		 			</li>
+		 			<li class="liSty">
+		 				<h2>QQ表情商城</h2>
+		 				<p>2014/04/01&nbsp;&nbsp;&nbsp;共13个</p>
+		 				<a class="down_rar" href="" title="点击即刻下载"></a>
+		 				<a class="down_QQrar" href="" title="点击即刻下载"></a>
+		 				<div class="div">
+							<a name="nextBtn" class="nextBtn" href="javascript:void(0);"></a>
+		 					<div class="lst_wap">
+			 					<ul>
+			 					</ul>
+		 					</div>
+		 				</div>
+		 			</li>
 		 		</ul>
 		 	</div>
 		 </div>
 	</body>
+	<script type="text/javascript" src="js/ming.js"></script>
 	<script type="text/javascript">
+		window.onload = function () {
+			var arrImg = [
+				['/lengtu/img/download/tietu/line/0.png', '/lengtu/img/download/tietu/line/1.png', '/lengtu/img/download/tietu/line/2.png', '/lengtu/img/download/tietu/line/3.png', '/lengtu/img/download/tietu/line/4.png', '/lengtu/img/download/tietu/line/5.png', '/lengtu/img/download/tietu/line/6.png', '/lengtu/img/download/tietu/line/7.png', '/lengtu/img/download/tietu/line/8.png', '/lengtu/img/download/tietu/line/9.png', '/lengtu/img/download/tietu/line/10.png', '/lengtu/img/download/tietu/line/11.png', '/lengtu/img/download/tietu/line/12.png', '/lengtu/img/download/tietu/line/13.png', '/lengtu/img/download/tietu/line/14.png', '/lengtu/img/download/tietu/line/15.png', '/lengtu/img/download/tietu/line/16.png', '/lengtu/img/download/tietu/line/17.png', '/lengtu/img/download/tietu/line/18.png', '/lengtu/img/download/tietu/line/19.png', '/lengtu/img/download/tietu/line/20.png', '/lengtu/img/download/tietu/line/21.png', '/lengtu/img/download/tietu/line/22.png', '/lengtu/img/download/tietu/line/23.png', '/lengtu/img/download/tietu/line/24.png', '/lengtu/img/download/tietu/line/25.png', '/lengtu/img/download/tietu/line/26.png', '/lengtu/img/download/tietu/line/27.png', '/lengtu/img/download/tietu/line/28.png', '/lengtu/img/download/tietu/line/29.png', '/lengtu/img/download/tietu/line/30.png', '/lengtu/img/download/tietu/line/31.png', '/lengtu/img/download/tietu/line/32.png', '/lengtu/img/download/tietu/line/33.png', '/lengtu/img/download/tietu/line/34.png', '/lengtu/img/download/tietu/line/35.png', '/lengtu/img/download/tietu/line/36.png', '/lengtu/img/download/tietu/line/37.png', '/lengtu/img/download/tietu/line/38.png'],
+				['/lengtu/img/download/tietu/baidumotu/0.png', '/lengtu/img/download/tietu/baidumotu/1.png', '/lengtu/img/download/tietu/baidumotu/2.png', '/lengtu/img/download/tietu/baidumotu/3.png', '/lengtu/img/download/tietu/baidumotu/4.png', '/lengtu/img/download/tietu/baidumotu/5.png', '/lengtu/img/download/tietu/baidumotu/6.png', '/lengtu/img/download/tietu/baidumotu/7.png', '/lengtu/img/download/tietu/baidumotu/8.png', '/lengtu/img/download/tietu/baidumotu/9.png', '/lengtu/img/download/tietu/baidumotu/10.png', '/lengtu/img/download/tietu/baidumotu/11.png', '/lengtu/img/download/tietu/baidumotu/12.png', '/lengtu/img/download/tietu/baidumotu/13.png', '/lengtu/img/download/tietu/baidumotu/14.png', '/lengtu/img/download/tietu/baidumotu/15.png', '/lengtu/img/download/tietu/baidumotu/16.png', '/lengtu/img/download/tietu/baidumotu/17.png', '/lengtu/img/download/tietu/baidumotu/18.png', '/lengtu/img/download/tietu/baidumotu/19.png', '/lengtu/img/download/tietu/baidumotu/20.png', '/lengtu/img/download/tietu/baidumotu/21.png', '/lengtu/img/download/tietu/baidumotu/22.png', '/lengtu/img/download/tietu/baidumotu/23.png'],
+				['/lengtu/img/download/tietu/kechenggezi/0.png', '/lengtu/img/download/tietu/kechenggezi/1.png', '/lengtu/img/download/tietu/kechenggezi/2.png', '/lengtu/img/download/tietu/kechenggezi/3.png', '/lengtu/img/download/tietu/kechenggezi/4.png', '/lengtu/img/download/tietu/kechenggezi/5.png', '/lengtu/img/download/tietu/kechenggezi/6.png', '/lengtu/img/download/tietu/kechenggezi/7.png', '/lengtu/img/download/tietu/kechenggezi/8.png', '/lengtu/img/download/tietu/kechenggezi/9.png', '/lengtu/img/download/tietu/kechenggezi/10.png', '/lengtu/img/download/tietu/kechenggezi/11.png', '/lengtu/img/download/tietu/kechenggezi/12.png', '/lengtu/img/download/tietu/kechenggezi/13.png', '/lengtu/img/download/tietu/kechenggezi/14.png', '/lengtu/img/download/tietu/kechenggezi/15.png', '/lengtu/img/download/tietu/kechenggezi/16.png', '/lengtu/img/download/tietu/kechenggezi/17.png', '/lengtu/img/download/tietu/kechenggezi/18.png', '/lengtu/img/download/tietu/kechenggezi/19.png', '/lengtu/img/download/tietu/kechenggezi/20.png', '/lengtu/img/download/tietu/kechenggezi/21.png', '/lengtu/img/download/tietu/kechenggezi/22.png'],
+				['/lengtu/img/download/tietu/QQlengtuguoshuangjie/0.png', '/lengtu/img/download/tietu/QQlengtuguoshuangjie/1.png', '/lengtu/img/download/tietu/QQlengtuguoshuangjie/2.png', '/lengtu/img/download/tietu/QQlengtuguoshuangjie/3.png', '/lengtu/img/download/tietu/QQlengtuguoshuangjie/4.png', '/lengtu/img/download/tietu/QQlengtuguoshuangjie/5.png', '/lengtu/img/download/tietu/QQlengtuguoshuangjie/6.png', '/lengtu/img/download/tietu/QQlengtuguoshuangjie/7.png', '/lengtu/img/download/tietu/QQlengtuguoshuangjie/8.png', '/lengtu/img/download/tietu/QQlengtuguoshuangjie/9.png', '/lengtu/img/download/tietu/QQlengtuguoshuangjie/10.png', '/lengtu/img/download/tietu/QQlengtuguoshuangjie/11.png', '/lengtu/img/download/tietu/QQlengtuguoshuangjie/12.png', '/lengtu/img/download/tietu/QQlengtuguoshuangjie/13.png', '/lengtu/img/download/tietu/QQlengtuguoshuangjie/14.png', '/lengtu/img/download/tietu/QQlengtuguoshuangjie/15.png'],
+				['/lengtu/img/download/tietu/QQshangcheng/0.png', '/lengtu/img/download/tietu/QQshangcheng/1.png', '/lengtu/img/download/tietu/QQshangcheng/2.png', '/lengtu/img/download/tietu/QQshangcheng/3.png', '/lengtu/img/download/tietu/QQshangcheng/4.png', '/lengtu/img/download/tietu/QQshangcheng/5.png', '/lengtu/img/download/tietu/QQshangcheng/6.png', '/lengtu/img/download/tietu/QQshangcheng/7.png', '/lengtu/img/download/tietu/QQshangcheng/8.png', '/lengtu/img/download/tietu/QQshangcheng/9.png', '/lengtu/img/download/tietu/QQshangcheng/10.png', '/lengtu/img/download/tietu/QQshangcheng/11.png', '/lengtu/img/download/tietu/QQshangcheng/12.png', '/lengtu/img/download/tietu/QQshangcheng/13.png'],
+			];
+			var oLst = document.getElementById("list");
+			var aUl = oLst.getElementsByTagName('ul');
+			var oBtn = document.getElementsByName('nextBtn');
+			for (var i=0; i < aUl.length; i++) {
+				carouselImage( aUl[i], oBtn[i], arrImg[i], 3);
+			};
+		};
+		function carouselImage( oUl, oBtn, arrImg, num, evt) {
+			//var oUl = document.getElementById(id);
+			var oLi = oUl.getElementsByTagName('li');
+			num = Number(num);
+			var doWhat = 'onclick';
+			evt && (doWhat = evt);
+			for(var i=0; i<arrImg.length; i++) {
+				oUl.innerHTML += "<li><img src='"+ arrImg[i] +"'/></li>";
+			}
+			var liWidth = parseInt(getStyle(oLi[0], 'width'));
+			var margin = parseInt(getStyle(oLi[0], 'marginRight'));
+			getWidth( oUl, oLi, margin);
+			//var oBtn = document.getElementsByTagName('input')[0];
+			oBtn.flag = false;
+			oBtn[doWhat] = function () {
+				if(!oBtn.flag) {
+					oBtn.flag = true;
+					for( var i=0; i<num; i++) {
+						var li = oUl.children[i].cloneNode(true);
+						oUl.appendChild(li);
+						getWidth( oUl, oLi, margin);
+					}
+					doMove( oUl, 'left', 10, - num * (liWidth+margin), function () {
+						for(var j=0; j<num; j++) {
+							oUl.removeChild(oLi[0]);
+						}
+						oUl.style.left = 0;
+						oBtn.flag = false;
+					});
+				}
+			};
+		}
+		function getWidth ( obj, subElement, margin ) {
+			var oneSize = subElement[0].offsetWidth + margin;
+			obj.style.width = oneSize * subElement.length + 'px';
+		}
 	</script>
 </html>
 
