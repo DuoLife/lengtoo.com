@@ -1,0 +1,59 @@
+/**
+ * date: 2014/04/03	
+ * 
+ * author: xuming
+ * 
+ * email: xuming@coldworks.com
+ */
+html{
+	font-family: Microsoft YaHei;
+}
+.wrapper{
+	background: url("../img/bj.jpg");
+}
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration:none;
+}
+a{
+	color: #FFF;
+}
+.header{
+	width: 970px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 22px;
+	color: #FFF;
+}
+/*********      导航栏        **********/
+.title_bar{
+	position: relative;
+}
+.title_bar .logo{
+	position: absolute;
+	left: 0px;
+	top: 20px;
+	margin:0 80px 0 0;
+	font-size: 28px;
+}
+.title_bar ul{
+	position: relative;
+	left: 120px;
+}
+.title_bar li{
+	line-height: 100px;
+	margin: 0 4px;
+	padding: 4px 6px 6px;
+	display: inline;
+	-moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius: 5px;            /* W3C syntax */
+}
+.title_bar .active{
+	background: #EA8E67;
+}
+.title_bar li:hover{
+	background: #EA8E67;
+}
+/*********      导航栏        **********/

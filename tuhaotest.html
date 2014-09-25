@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>冷兔X天天富翁表情获取攻略</title>
+<style>
+	body {padding: 0; margin: 10px 0 0; background:#FFF;}
+	.red {color: red}
+	.content {padding: 0 20px;}
+	@media screen and (min-width:640px){
+		.explain {font-size: 20px;width: 610px; margin-left: 20px; text-align: left;}
+		.title {font-size: 36px;}
+		.contentSize {font-size: 30px;text-align: left;}
+		.border1 {border: #E4E3DE 1px solid; padding: 10px;}
+		#wrapper { width: 640px; margin: 0 auto;text-align: center;}
+		.bj{ position: relative;text-align: center;}
+		.bj img, .header img, .footer img { width: 630px;}
+		.Btn { display: block; width: 620px; margin-left: 10px;}
+		.footer img { margin-top: 20px;}
+	}
+	@media screen and (min-width:320px) and (max-width:640px){
+		.explain {font-size: 14px;width: 310px; margin-left: 24px; text-align: left;}
+		.title {font-size: 20px;}
+		.contentSize {font-size: 18px;text-align: left;}
+		.border1 {border: #E4E3DE 1px solid; padding: 10px;}
+		#wrapper { width: 360px; margin: 0 auto;text-align: center;}
+		.bj{ position: relative;text-align: center;}
+		.bj img, .header img, .footer img { width: 350px;}
+		.Btn img {width: 320px;}
+		.Btn { display: block; width: 320px; margin-left: 20px;}
+		.footer img { margin-top: 20px;}
+	}
+	@media screen and (max-width:320px){
+		.explain {font-size: 12px;width: 260px; margin-left: 24px; text-align: left;}
+		.title {font-size: 18px;}
+		.contentSize {font-size: 16px;text-align: left;}
+		.border1 {border: #E4E3DE 1px solid; padding: 10px;}
+		#wrapper { width: 320px; margin: 0 auto;text-align: center;}
+		.bj{ position: relative;text-align: center;}
+		.bj img, .header img, .footer img { width: 310px;}
+		.Btn img {width: 280px;}
+		.Btn { display: block; width: 280px; margin-left: 18px;}
+		.footer img { margin-top: 20px;}
+	}
+</style>
+</head>
+
+<body>
+	<div id="wrapper">
+    	<div class="header">
+        	<img src="images/tuhao/header.png"/>
+        </div>
+        <div class="content">
+        	<p class="title red">【冷兔X天天富翁表情获取攻略】</p>
+        	<hr style="border: #E4E3DE 1px solid;"/>
+			<p class="contentSize">还在苦苦思考怎样优雅的炫富嘛？<br/>人群之中如何让别人一眼看出你土豪的本质？</p>
+			<p class="contentSize">——快来添加微信账号：<span class="red">“lengtoo”</span></p>
+			<p class="contentSize">——并回复：<span class="red">“我要变土豪”</span></p>
+			<p class="contentSize">即可获得“买买买”“不买还是人？”“这块地被我承包了”等超赞实用聊天表情</p>
+			<div class="border1">
+				<p class="red">才不会告诉你每天还能接收到百万人追捧的超级爆笑栏目“冷兔槽”呢~</p>
+			</div>
+        </div>
+    	<div class="bj">
+    		<img src="images/tuhao/btn.png"/>
+        	<a class="Btn position1" href="weixin://qr/" target="_blank"><img src="images/tuhao/btn_logo1.png"/></a>
+        	<p class="explain">Android 版微信暂不支持传送门请手动添加，打开微信搜索公众账号<span class="red">"lengtoo"</span>添加关注</p>
+        </div>
+    	<div class="footer">
+        	<img src="images/tuhao/footer.png"/>
+        </div>
+    </div>
+<script>
+	window.onload = function () {
+		var aBtn = document.getElementsByTagName('a');
+		for(var i=0; i<aBtn.length; i++) {
+			aBtn[i].onmouseover = function () {
+				this.index = i;
+				var aImg = this.getElementsByTagName('img');
+				aImg[0].src = 'images/tuhao/btn_logo1.png';
+			};
+			aBtn[i].onmouseout = function () {
+				this.index = i;
+				var aImg = this.getElementsByTagName('img');
+				aImg[0].src = 'images/tuhao/btn_logo0.png';
+			};
+		}
+	};
+</script>
+</body>
+</html>

@@ -9,59 +9,6 @@
 #nav a { display: block; width: 120px; float: left; color: #FFF; }
 #nav a:hover { background: #9AB2CE; }
 #nav .active {background: #9AB2CE;}
-/*--------------------------------------*/
-html{
-	font-family: Microsoft YaHei;
-}
-.wrapper{
-	background: url("../img/bj.jpg");
-}
-*{
-	margin: 0;
-	padding: 0;
-	text-decoration:none;
-}
-a{
-	color: #FFF;
-}
-.header{
-	width: 970px;
-	margin: 0 auto;
-	text-align: center;
-	font-size: 22px;
-	color: #FFF;
-}
-/*********      导航栏        **********/
-.title_bar{
-	position: relative;
-}
-.title_bar .logo{
-	position: absolute;
-	left: 4px;
-	top: 30px;
-	margin:0 80px 0 0;
-	font-size: 28px;
-}
-.title_bar ul{
-	position: relative;
-	left: 120px;
-}
-.title_bar li{
-	line-height: 100px;
-	margin: 0 4px;
-	padding: 4px 6px 6px;
-	display: inline;
-	-moz-border-radius: 5px;      /* Gecko browsers */
-    -webkit-border-radius: 5px;   /* Webkit browsers */
-    border-radius: 5px;            /* W3C syntax */
-}
-.title_bar .active{
-	background: #EA8E67;
-}
-.title_bar li:hover{
-	background: #EA8E67;
-}
-/*********      导航栏  end      **********/
 #product_list{
     width: 960px;
     margin: 0 auto;
@@ -107,13 +54,13 @@ a{
 	width: 128px;
 	height: 32px;
 	display: block;
-	background: url("/lengtu/img/download/download_0.png") no-repeat center;
+	background: url("/lengtoo/img/download/download_0.png") no-repeat center;
 	position: absolute;
 	right: 10px;
 	top: 14px;
 }
 .pdt_describe a:hover{
-	background: url("/lengtu/img/download/download_1.png") no-repeat center;
+	background: url("/lengtoo/img/download/download_1.png") no-repeat center;
 }
 .footer{
     width: 100%;

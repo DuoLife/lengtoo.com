@@ -1,0 +1,11 @@
+/*
+	author: xuming;
+	eMail: vip6ming@126.com;
+	date: 2014年8月7日10:50:23;
+*/
+#progress_d {height: 100%; width: 100%; position: fixed; left: 0; top: 0; background: #CCC;}
+#progress_d .progressBox{position: relative; margin: 0px auto;width: 250px;height: 2px;border: 0px solid;background: #FFF;}
+#progress_d .img{width: 200px; height: 200px;margin: 200px auto 0;}
+#progress_d .progressBar{position: absolute;left: 0px;top: 0px;width: 0px;height: 2px;background: #E93826;}
+#progress_d .percentP{position: absolute;left: 256px;top: -8px;color: #E93826;}
+.wrapper {display: none;}
