@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title> </title>
+		<link rel="stylesheet" href="/lengtoo/css/style.css">
+		<link rel="stylesheet" href="/lengtoo/css/subpage.css">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="author" content="Orange" />
+		<!-- Date: 2014-05-07 -->
+		<script type="text/javascript">
+			window.onload = function () {
+				
+				//data
+				var mesgJson = {
+					webTitle: '冷兔 & LINECamera',
+					title: 'linecamera',
+					showImgNum: 2,			//展示，样例图片数量
+					showImgType: 'png',		//展示，样例图片类型
+					chartletTotal: '48',	//贴图（表情）数量
+					chartletImgType: 'png', //贴图（表情）类型
+					downloadUrl: 'linecamera.zip',
+					description: 'Japan推出。是一款免费的应用软件, 您可以使用它, 轻松地将照片装饰得更加有趣、更加可爱, 并与朋友们分享。 还可以轻松地发送带有各种角色的照片, 让你的照片更加有趣, 更加可爱!  把加工好的照片分享给朋友们吧!'
+				};
+				
+				//元素获取
+				var oLogo = document.getElementById('logo');
+				var oDescText = document.getElementById('descrip_word');
+				var oDescImg = document.getElementById('descrip_img');
+				var oShowDiv = document.getElementById('products_show');
+				var oDownloadUrl = document.getElementById('downloadUrl');
+				var descImgstr = '';
+				var showDivstr = '';
+				
+				/********fu zhi*********/
+				
+				//修改页面title
+				document.title = mesgJson.webTitle;
+				//添加logo图片
+				oLogo.innerHTML = '<img src="/lengtoo/img/' + mesgJson.title + '/logo.png"/>';
+				//添加页面描述
+				oDescText.innerHTML = '<p>' + mesgJson.description + '</p>';
+				//添加展示图片（贴图，表情）
+				for(var i=0; i<mesgJson.showImgNum; i++) {
+					descImgstr += '<img src="/lengtoo/img/' + mesgJson.title + '/' + mesgJson.title + '_show' + i + '.' + mesgJson.showImgType + '"/>';
+				};
+				oDescImg.innerHTML = descImgstr;
+				//添加贴图(表情）展示
+				for(var i=0; i<mesgJson.chartletTotal; i++) {
+					showDivstr += '<img src="/lengtoo/img/' + mesgJson.title + '/chartlet/' + i + '.' + mesgJson.chartletImgType + '"/>';//'<img src="/lengtoo/img/' + mesgJson.title + '/chartlet/' + i + mesgJson.chartletImgType'"/>';
+				};
+				oShowDiv.innerHTML = showDivstr;
+				//添加下载地址
+				oDownloadUrl.href = 'img/' + mesgJson.title + '/' + mesgJson.downloadUrl;
+			};
+		</script>
+	</head>
+	<body>
+		<div class="products_wrap">
+			<div class="products_title">
+				<div class="logo" id="logo"></div>
+				<!-- <!--<div class="close_button"><img src="img/title_close.png"/></div> -->
+			</div>
+			<hr class="hr"/>
+			<div class="products_description">
+				<div class="descrip_word" id="descrip_word">
+				</div>
+				<div class="descrip_img" id="descrip_img">
+				</div>
+			</div>
+			<hr class="hr"/>
+			<p><a id="downloadUrl" href="#" class="download_a">打包下载</a></p>
+			<div class="products_show" id="products_show" style="width: 900px;">
+			</div>
+		</div>
+	</body>
+</html>
