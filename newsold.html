@@ -12,19 +12,6 @@
 		<style>
 			.wrapper{ padding-bottom: 220px;}
 		</style>
-		<style>
-			li {list-style: none;}
-			#rollimg_wrap {position: relative; margin: 0px auto; width: 960px; height: 300px;}
-			#rollimg_wrap input {width: 100px; height: 100px; position: absolute; top: 100px; border: 0;}
-			#rollimg_wrap input:nth-of-type(1) {left: -100px;background: url(/lengtoo/img/news/leftbtn.png) center no-repeat;}
-			#rollimg_wrap input:nth-of-type(2) {right: -100px;background: url(/lengtoo/img/news/rightbtn.png) center no-repeat;}
-			#rollimg_wrap input:nth-of-type(1):hover {left: -102px;}
-			#rollimg_wrap input:nth-of-type(2):hover {right: -102px;}
-			#rollimg_ul {width: 960px; height: 300px; -webkit-perspective:600px; -webkit-transform-style:preserve-3d; position: absolute; left: 0; top: 0;}
-			#rollimg_ul li{width: 58px; height: 58px; background: red; border:1px solid rgba(0,0,0,0); float: left;background:url(/lengtoo/img/news/banner0.jpg) no-repeat; transition:1s background;}
-			#rollimg_ul:nth-of-type(2) li{background:url(/lengtoo/img/news/banner1.jpg) no-repeat;}
-			#rollimg_ul:nth-of-type(3) li{background:url(/lengtoo/img/news/banner2.jpg) no-repeat;}
-		</style>
 	</head>
 	<body>
 	 <div class="wrapper">
@@ -42,19 +29,14 @@
 		 	</div>
 		 </div>
 		 	<div class="slide">
-		 		<div id="rollimg_wrap">
-					<input type="button" value=""/>
-					<input type="button" value=""/>
-						<ul id="rollimg_ul">
-					    	<li></li>
-					    </ul>
-						<ul id="rollimg_ul">
-					    	<li></li>
-					    </ul>
-						<ul id="rollimg_ul">
-					    	<li></li>
-					    </ul>
-					</div>
+		 		<ul id="J-Touch1" class="img_wrapper">
+			 		<li>
+			 			<img src="/lengtoo/img/news/banner0.jpg"/>
+			 		</li>
+			 		<li>
+			 			<img src="/lengtoo/img/news/banner1.jpg"/>
+			 		</li>
+		 		</ul>
 		 	</div>
 		 	<div id="product_list" class="products_list">
 		 		<ul>
@@ -134,10 +116,17 @@
 	        prettyPrint();
 	      })
 	    </script>
-	    
-		<script type="text/javascript" src="js/rollimg-3d.js"></script>
-		<script>
-			rollimg3D();
+		<script src="js/imgScrolling.js"></script>
+		<script type="text/javascript">
+			var test1=new mobileImgScroll();
+				test1.init({
+					Touch:"#J-Touch1",
+					//TouchIco:"#J-Touch-ico1",
+					Width:960,
+					Current:"on",
+					isAuto:true,
+					offSet:5000
+				});
 		</script>
 	</body>
 </html>
